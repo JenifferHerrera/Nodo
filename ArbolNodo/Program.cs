@@ -40,7 +40,7 @@ namespace ArbolNodo
             };
             raiz.Resultado = new Nodo()
             {
-                Valor = "==",
+                Valor = "=",
                 Izquierdo = new Nodo()
                 {
                     Valor = "",
@@ -51,23 +51,5 @@ namespace ArbolNodo
                 }
             };
         }
-    }
-    class Nodo
-    {
-        private string _valor;
-        public Nodo() { }
-        public Nodo(string valor)
-        {
-            Console.WriteLine("Estoy en el constructor");
-            Valor = valor;
-        }
-
-        public string Valor { get{ return _valor; } set {
-                Console.WriteLine("Estoy en la propiedad");
-                _valor = value;} }
-        public Nodo Izquierdo { get; set; }
-        public Nodo Derecho { get; set; }
-        public Nodo Resultado { get; set; }
-        public string V { get; }
     }
 }
